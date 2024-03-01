@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo APP</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1 id="h1">TODO APP</h1>
+  <div class="main-div">
+    <!-- To Add list Data -->
+    <form id="add">
+      <input type="text" name="list" id="new-list" placeholder="Enter New List" required>
+      <button type="button" onclick="addData()" id="Add-information">Add Information</button>
+    </form>
+  </div>
+
+  <div id="todolist"></div>
+  <div id="success-message" class="success-message">List added successfully!</div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

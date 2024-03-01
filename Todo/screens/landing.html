@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('todoimg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            background-color: #756565;
+            color: #fff;
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: end;
+        }
+
+        li {
+            margin-right: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffd700;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        #landing-content {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(83, 73, 73, 0.3);
+            color: black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            /* display: flex; */
+            position: absolute;
+            left: 18px;
+            bottom: 100px;
+        }
+
+        #landing-content:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: #0a0606;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        ul li {
+            margin-right: 20px;
+            color: #c2c8cc;
+        }
+
+        #get-started-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        #get-started-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="landing-content">
+        <h1>Welcome to the TODO App</h1>
+        <p>Stay organized and boost your productivity with our simple and effective TODO app. Manage your tasks effortlessly and never miss a deadline again.</p>
+        <!-- <p>Key features:</p> -->
+        <ul>
+            <li>Update your tasks with ease</li>
+            <li>Simple and intuitive design</li>
+            <li>Stay organized and focused</li>
+        </ul>
+
+        <a href="index.html" id="get-started-btn">Get Started</a>
+    </div>
+</body>
+
+</html>

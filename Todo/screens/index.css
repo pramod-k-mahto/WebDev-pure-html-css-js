@@ -1,0 +1,182 @@
+body,
+h1,
+form,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/11/03/38/sunset-2629542_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.main-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-list {
+    padding: 10px;
+    width: 70%;
+}
+
+#Add-information {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Add-information:hover {
+    background-color: #2980b9;
+}
+
+#todolist {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for ToDo list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Optional: Add styles for checked items */
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Add more styles to the button */
+#Add-information {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Add-information:hover {
+    background-color: #2980b9;
+}
+
+.name-div {
+    background-color: rgb(201, 192, 192);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Add styles for Edit and Delete buttons */
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #3498db;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Adjust styles for better responsiveness on smaller screens */
+@media (max-width: 600px) {
+    #new-list {
+        width: 100%;
+    }
+
+    #Add-information {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Add styles for pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-container button {
+    padding: 8px;
+    margin: 0 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Add the style for the success message */
+.success-message {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
